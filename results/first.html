@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Drop Shot Moneyball · First moneyball · Results</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>  :root{
+    --court:#1D3F34;--court-2:#2E5E4E;--crema:#C89B3C;--crema-soft:#F3E7CF;
+    --paper:#F5F1E8;--paper-2:#ECE6D8;--ink:#16211C;--ink-2:#4A5751;--ink-3:#7A867F;
+    --line:#D8D0BC;--loss:#9B3B2E;
+    --display:"Bricolage Grotesque","Inter",system-ui,sans-serif;
+    --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+    --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  *,*::before,*::after{box-sizing:inherit}
+  html{scroll-padding-top:env(safe-area-inset-top,0px)}
+  html,body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15.5px;line-height:1.5;-webkit-font-smoothing:antialiased}
+  a{color:var(--court-2)}
+  .wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+
+  /* hero band: full bleed on every screen */
+  .hero{background:var(--court);color:var(--paper);position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;right:-70px;top:-70px;width:260px;height:260px;border-radius:50%;border:1.5px solid rgba(200,155,60,.28);pointer-events:none}
+  .hero::before{content:"";position:absolute;right:-20px;top:-20px;width:160px;height:160px;border-radius:50%;border:1.5px solid rgba(200,155,60,.18);pointer-events:none}
+  .hero .wrap{padding-top:30px;padding-bottom:34px;position:relative;z-index:1}
+  .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--crema);margin:0 0 10px}
+  .hero h1{font-family:var(--display);font-weight:800;font-size:40px;line-height:.98;letter-spacing:-.02em;margin:0 0 14px}
+  .hero h1 span{color:var(--crema)}
+  .lede,.meta{margin:0;font-size:15px;color:#C9D6CF;max-width:44ch}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+  .chip{border:1px solid rgba(200,155,60,.45);border-radius:999px;padding:5px 12px;font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--crema);white-space:nowrap}
+  .chip b{font-family:var(--display);font-size:17px;font-weight:800;color:var(--paper);letter-spacing:0;margin:0 2px}
+
+  h3.sec{font-family:var(--display);font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--court-2);margin:0 0 12px;display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+  h3.sec small{font-family:var(--mono);font-weight:500;font-size:11px;letter-spacing:.08em;color:var(--ink-3);text-transform:none}
+
+  .panel{background:#fff;border:1px solid var(--line);border-radius:12px}
+
+  footer.site{padding:30px 20px 34px;text-align:center}
+  footer.site .brand{font-family:var(--display);font-weight:800;font-size:16px;color:var(--court)}
+  footer.site .brand span{color:var(--crema)}
+  footer.site p{margin:4px 0 0;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+
+  /* hover affordances only where a mouse exists */
+  @media (hover:hover) and (pointer:fine){
+    .hoverable{transition:border-color .12s ease, transform .12s ease, box-shadow .12s ease}
+    .hoverable:hover{border-color:var(--court-2);transform:translateY(-1px);box-shadow:0 6px 18px rgba(29,63,52,.08)}
+  }
+
+  /* tablet */
+  @media (min-width:640px){
+    .wrap{padding:0 32px}
+    .hero .wrap{padding-top:40px;padding-bottom:44px}
+    .hero h1{font-size:54px}
+    .lede,.meta{font-size:16.5px}
+  }
+  /* desktop */
+  @media (min-width:1000px){
+    .wrap{padding:0 40px}
+    .hero .wrap{padding-top:56px;padding-bottom:64px}
+    .hero h1{font-size:76px}
+    .lede,.meta{font-size:18px}
+    .hero::after{width:520px;height:520px;right:-140px;top:-180px}
+    .hero::before{width:320px;height:320px;right:-40px;top:-80px}
+  }
+
+  .champ{background:var(--crema);color:#1E1604;border-radius:12px;padding:18px 20px 16px;box-shadow:0 10px 30px rgba(29,63,52,.18)}
+  .champ .lab{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;opacity:.75;margin:0 0 6px}
+  .champ h2{font-family:var(--display);font-weight:800;font-size:26px;line-height:1.05;letter-spacing:-.015em;margin:0 0 8px}
+  .champ .final{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;font-size:14px}
+  .champ .score{font-family:var(--display);font-weight:800;font-size:28px;letter-spacing:-.02em;white-space:nowrap}
+  .champ .runner{margin-top:10px;padding-top:10px;border-top:1px solid rgba(30,22,4,.18);font-size:13.5px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+  .champ .runner b{font-family:var(--mono);font-weight:600}
+
+  table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  th,td{padding:9px 10px;text-align:right;font-variant-numeric:tabular-nums}
+  th{font-family:var(--mono);font-weight:500;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);background:var(--paper-2);border-bottom:1px solid var(--line)}
+  th.l,td.l{text-align:left}
+  td{border-bottom:1px solid #EFEADF;font-size:14px}
+  tr:last-child td{border-bottom:0}
+  td.rank{font-family:var(--mono);color:var(--ink-3);width:28px;padding-right:0}
+  td.team{font-weight:600}
+  tr.first td{background:var(--crema-soft)}
+  tr.first td.rank{color:var(--crema);font-weight:600}
+  td.diff{font-family:var(--mono);font-weight:500}
+  td.pos{color:var(--court-2)} td.neg{color:var(--loss)}
+
+  .rounds{display:grid;gap:10px}
+  .round{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+  .round .r{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin-bottom:6px}
+  .g{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:center;padding:5px 0;border-top:1px solid #EFEADF;font-size:13.5px}
+  .g:first-of-type{border-top:0}
+  .g .a{text-align:right} .g .b{text-align:left}
+  .g .w{font-weight:600} .g .lo{color:var(--ink-2)}
+  .g .s{font-family:var(--mono);font-weight:600;font-size:13px;white-space:nowrap;background:var(--paper-2);border-radius:6px;padding:2px 8px}
+
+  .potpanel{display:flex;align-items:center;gap:14px;margin-top:18px;background:#fff;border-radius:12px;padding:10px 16px 10px 10px;max-width:440px}
+  .potpanel img{display:block;width:132px;height:auto;flex:0 0 auto}
+  .potpanel .pt{color:var(--ink)}
+  .potpanel .pt .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--crema);margin:0 0 2px}
+  .potpanel .pt .big{font-family:var(--display);font-weight:800;font-size:28px;line-height:1;letter-spacing:-.02em;margin:0 0 4px}
+  .potpanel .pt .sm{font-size:13px;color:var(--ink-2);margin:0}
+  @media (min-width:1000px){ .potpanel{margin-bottom:36px} .potpanel img{width:170px} .potpanel .pt .big{font-size:34px} }
+  .back{display:inline-block;margin:18px 0 0;font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--crema)}
+
+  /* phone: single column, champion card overlaps the hero */
+  .layout{display:flex;flex-direction:column;gap:24px;padding-bottom:6px}
+  .layout .side{display:flex;flex-direction:column;gap:24px}
+  .layout .champ{margin-top:-16px;position:relative;z-index:2}
+
+  @media (min-width:640px){
+    .champ h2{font-size:30px}
+    .g .a,.g .b{white-space:nowrap}
+  }
+
+  /* desktop: results on the left, every game on the right */
+  @media (min-width:1000px){
+    .layout{display:grid;grid-template-columns:minmax(0,440px) minmax(0,1fr);gap:40px;align-items:start}
+    .layout .side{position:sticky;top:24px;display:flex;flex-direction:column;gap:24px;margin-top:-56px}
+    .layout .champ{margin-top:0}
+    .layout .games{padding-top:28px}
+    .champ{padding:22px 24px 20px}
+    .champ h2{font-size:32px}
+    .champ .score{font-size:34px}
+    .g{font-size:14px}
+  }
+</style>
+</head><body>
+<header class="hero"><div class="wrap">
+  <p class="kicker">Drop Shot Games &amp; Money Balls</p>
+  <h1>Moneyball<br><span>Results</span></h1>
+  <p class="meta">The first one · 12 players, 6 teams</p>
+  <div class="chips"><span class="chip">Pot <b>$360</b> · winner takes all</span></div>
+</div></header>
+
+<div class="wrap layout">
+  <div class="side">
+    <div class="champ">
+      <p class="lab">Winners · $360</p>
+      <h2>Grant Harris &amp; Dan</h2>
+      <div class="final"><span>Beat Jim Jenkins &amp; Jonas Satuito both times they met</span><span class="score">15 – 7 · 15 – 5</span></div>
+      <div class="runner"><span>Runners-up · Jim Jenkins &amp; Jonas Satuito</span><b>2nd</b></div>
+    </div>
+    <section>
+      <h3 class="sec">Standings <small>wins, then point diff.</small></h3>
+      <table><thead><tr><th></th><th class="l">Team</th><th>W</th><th>L</th><th>Diff</th></tr></thead>
+      <tbody><tr class="first"><td class="rank">1</td><td class="l team">Grant Harris &amp; Dan</td><td>5</td><td>1</td><td class="diff pos">+33</td></tr><tr><td class="rank">2</td><td class="l team">Jim Jenkins &amp; Jonas Satuito</td><td>4</td><td>2</td><td class="diff pos">+15</td></tr><tr><td class="rank">3</td><td class="l team">Charles Cao &amp; Gordon</td><td>3</td><td>2</td><td class="diff pos">+13</td></tr><tr><td class="rank">4</td><td class="l team">Mark Dixon &amp; Michael Lin</td><td>2</td><td>3</td><td class="diff neg">−2</td></tr><tr><td class="rank">5</td><td class="l team">Lawrence Chan &amp; Josh Molina</td><td>2</td><td>3</td><td class="diff neg">−9</td></tr><tr><td class="rank">6</td><td class="l team">Philip Cheng &amp; Ethan Cheng</td><td>0</td><td>5</td><td class="diff neg">−50</td></tr></tbody></table>
+    </section>
+  </div>
+  <section class="games">
+    <h3 class="sec">All 16 games <small>winner in bold</small></h3>
+    <div class="rounds"><div class="round"><div class="r">Court 1</div><div class="g"><span class="a w">Jim &amp; Jonas</span><span class="s">15 – 3</span><span class="b lo">Mark &amp; Michael</span></div><div class="g"><span class="a w">Jim &amp; Jonas</span><span class="s">15 – 12</span><span class="b lo">Charles &amp; Gordon</span></div><div class="g"><span class="a w">Jim &amp; Jonas</span><span class="s">15 – 5</span><span class="b lo">Philip &amp; Ethan</span></div><div class="g"><span class="a w">Grant &amp; Dan</span><span class="s">15 – 7</span><span class="b lo">Jim &amp; Jonas</span></div><div class="g"><span class="a w">Grant &amp; Dan</span><span class="s">15 – 12</span><span class="b lo">Mark &amp; Michael</span></div><div class="g"><span class="a w">Grant &amp; Dan</span><span class="s">15 – 5</span><span class="b lo">Jim &amp; Jonas</span></div></div><div class="round"><div class="r">Court 2</div><div class="g"><span class="a w">Grant &amp; Dan</span><span class="s">15 – 7</span><span class="b lo">Lawrence &amp; Josh</span></div><div class="g"><span class="a w">Charles &amp; Gordon</span><span class="s">15 – 9</span><span class="b lo">Grant &amp; Dan</span></div><div class="g"><span class="a w">Charles &amp; Gordon</span><span class="s">15 – 13</span><span class="b lo">Mark &amp; Michael</span></div><div class="g"><span class="a w">Grant &amp; Dan</span><span class="s">15 – 5</span><span class="b lo">Philip &amp; Ethan</span></div><div class="g"><span class="a w">Charles &amp; Gordon</span><span class="s">15 – 5</span><span class="b lo">Philip &amp; Ethan</span></div></div><div class="round"><div class="r">Court 3</div><div class="g"><span class="a w">Lawrence &amp; Josh</span><span class="s">15 – 13</span><span class="b lo">Charles &amp; Gordon</span></div><div class="g"><span class="a w">Lawrence &amp; Josh</span><span class="s">15 – 6</span><span class="b lo">Philip &amp; Ethan</span></div><div class="g"><span class="a w">Jim &amp; Jonas</span><span class="s">15 – 7</span><span class="b lo">Lawrence &amp; Josh</span></div><div class="g"><span class="a w">Mark &amp; Michael</span><span class="s">15 – 11</span><span class="b lo">Lawrence &amp; Josh</span></div><div class="g"><span class="a w">Mark &amp; Michael</span><span class="s">15 – 4</span><span class="b lo">Philip &amp; Ethan</span></div></div></div>
+    <a class="back" href="../" style="color:var(--court-2)">← All moneyballs</a>
+  </section>
+</div>
+<footer class="site"><div class="brand">Drop <span>Shot</span></div><p>Play · Games &amp; Money Balls</p></footer>
+</body></html>
